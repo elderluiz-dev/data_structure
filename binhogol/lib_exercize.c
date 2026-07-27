@@ -10,7 +10,7 @@ void main(){
   leiaChar(&b);
   imprimaChar(b);
 
-  float c;;
+  float c;
   leiaReal(&c);
   imprimaReal(c);
 }
