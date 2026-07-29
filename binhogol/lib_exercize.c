@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "binhogol.h"
 
-void main(){
+int main(){
   int a;
   leiaInt(&a);
   imprimaInt(a);
@@ -10,7 +10,9 @@ void main(){
   leiaChar(&b);
   imprimaChar(b);
 
-  float c;;
+  float c;
   leiaReal(&c);
   imprimaReal(c);
+
+  return 0;
 }

@@ -13,7 +13,7 @@ void leiaReal(float *var){
   scanf("%f", var);
 }
 void imprimaReal(float var){
-  printf("%2.f\n", var);
+  printf("%.2f\n", var);
 }
 
 // CARACTERES
