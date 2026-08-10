@@ -1,14 +1,13 @@
 #include <stdio.h>
 
-unsigned long long fatorial(unsigned n){
+unsigned long long fatorial(unsigned n, unsigned long long result){
   if(n <= 1){
-    return 1;
+    return result;
   }
   
-  unsigned long long result = n * fatorial(n - 1);
-  
-  printf("Fatorial: %llu\n", result);    
-  return result;
+  printf("Fatorial: %llu\n", result * n); 
+  result *= n;
+  return fatorial(n - 1, result);
 }
 
 int main(){
@@ -17,7 +16,7 @@ int main(){
   printf("Entrada: ");
   scanf("%d", &entrada);
   
-  printf("Saída: %lld\n", fatorial(entrada));
+  printf("Saída: %llu\n", fatorial((entrada - 1), entrada));
   
   return 0;
 }
