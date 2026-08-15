@@ -19,9 +19,9 @@ int main(){
   }
   
   int maior = p[0];
-  int pma;
+  int pma = 0;
   int menor = p[0];
-  int pme;
+  int pme = 0;
   
   printf("\n");
   
