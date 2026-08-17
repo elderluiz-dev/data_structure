@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 int main(){
+// DEFINIÇÃO E LEITURA
   int n;
   printf("Digite o tamanho do vetor: ");
   scanf("%d", &n);
@@ -17,6 +18,8 @@ int main(){
   for(int i = 0; i < n; i++){
     scanf("%d", &p[i]);
   }
+  
+// LÓGICA DA QUESTÃO
   
   int maior = p[0];
   int pma = 0;
@@ -41,7 +44,8 @@ int main(){
   
   printf("Maior elemento: %d, posição: %d | Menor elemento: %d, posição: %d\n", maior, pma, menor, pme);
   
+// LIBERAÇÃO DE MEMÓRIA E RETURN
   free(p);
-  
+  p = NULL;
   return 0;
 }

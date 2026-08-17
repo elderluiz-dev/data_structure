@@ -22,7 +22,6 @@ int main(){
   printf("\n");
 
 // LÓGICA DA QUESTÃO
-
     int aux;
     
     for(int i = 0; i < n/2; i++){
@@ -38,5 +37,6 @@ int main(){
 
 // LIBERAÇÃO DE MEMÓRIA E RETURN
   free(p);
+  p = NULL;
   return 0;
 }

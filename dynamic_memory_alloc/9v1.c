@@ -22,5 +22,6 @@ int main(){
   printf("Soma dos elementos: %d", soma);
   
   free(p);
-  
+  p = NULL;
+  return 0;
 }

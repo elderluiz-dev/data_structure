@@ -21,7 +21,6 @@ int main(){
   printf("\n");
 
 // LÓGICA DA QUESTÃO
-
   int rem;
   printf("Digite a posição a ser removida: ");
   scanf("%d", &rem);
@@ -52,5 +51,6 @@ int main(){
   
 // LIBERAÇÃO DE MEMÓRIA E RETURN
   free(p);
+  p = NULL;
   return 0;
 }

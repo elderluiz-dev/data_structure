@@ -21,7 +21,6 @@ int main(){
   printf("\n");
 
 // LÓGICA DA QUESTÃO
-
   int qtdPar = 0;
   int qtdImpar = 0;
 
@@ -75,5 +74,8 @@ int main(){
   free(p);
   free(vetPar);
   free(vetImpar);
+  p = NULL;
+  vetPar = NULL;
+  vetImpar = NULL;
   return 0;
 }

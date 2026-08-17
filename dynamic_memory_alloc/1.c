@@ -25,6 +25,7 @@ int main(){
   }
   
   free(p);
+  p = NULL;
   
   return 0;
 }

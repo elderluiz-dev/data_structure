@@ -38,7 +38,8 @@ int main(){
     }
   }
 
+// LIBERAÇÃO DE MEMÓRIA E RETURN
   free(p);
-  
+  p = NULL;
   return 0;
 }
