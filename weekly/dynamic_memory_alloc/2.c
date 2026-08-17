@@ -8,7 +8,6 @@ int main(){
   scanf("%d", &n);
   
   int *p = malloc(n * sizeof(*p));
-  
   if(p == NULL){
     printf("Falha na alocação!\n");
     return 1;
@@ -19,25 +18,31 @@ int main(){
     scanf("%d", &p[i]);
   }
   
-  printf("\n");
-
 // LÓGICA DA QUESTÃO
-
-  int soma;
-  int media;
-
-  for(int i = 0; i < n; i++){
-    soma += p[i];
-  }
-
-  media = soma / n;
+  int maior = p[0];
+  int pma = 0;
+  int menor = p[0];
+  int pme = 0;
+  
+  printf("\n");
   
   for(int i = 0; i < n; i++){
-    if(p[i] > media){
-      printf("Item acima da média: %d\n", p[i]);
+    if(p[i] > maior){
+      maior = p[i];
+      pma = i;
+    }
+    
+    if(p[i] < menor){
+      menor = p[i];
+      pme = i;
     }
   }
-
+  
+  pma++;
+  pme++;
+  
+  printf("Maior elemento: %d, posição: %d | Menor elemento: %d, posição: %d\n", maior, pma, menor, pme);
+  
 // LIBERAÇÃO DE MEMÓRIA E RETURN
   free(p);
   p = NULL;

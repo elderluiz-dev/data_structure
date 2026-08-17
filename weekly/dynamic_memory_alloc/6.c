@@ -46,6 +46,8 @@ int main(){
   
 // LIBERAÇÃO DE MEMÓRIA E RETURN
   free(p);
+  free(temp);
   p = NULL;
+  temp = NULL;
   return 0;
 }

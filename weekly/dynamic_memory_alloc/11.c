@@ -9,6 +9,8 @@ int main(){
     printf("Erro de alocação!\n");
     return EXIT_FAILURE;
   }
+  
+  printf("Sucesso na alocação");
 
   free(p);
   p = NULL;

@@ -19,31 +19,25 @@ int main(){
     scanf("%d", &p[i]);
   }
   
-// LÓGICA DA QUESTÃO
-  
-  int maior = p[0];
-  int pma = 0;
-  int menor = p[0];
-  int pme = 0;
-  
   printf("\n");
+
+// LÓGICA DA QUESTÃO
+
+  int soma = 0;
+  float media;
+
+  for(int i = 0; i < n; i++){
+    soma += p[i];
+  }
+
+  media = soma / n;
   
   for(int i = 0; i < n; i++){
-    if(p[i] > maior){
-      maior = p[i];
-      pma = i;
-    }
-    if(p[i] < menor){
-      menor = p[i];
-      pme = i;
+    if(p[i] > media){
+      printf("Item acima da média: %d\n", p[i]);
     }
   }
-  
-  pma++;
-  pme++;
-  
-  printf("Maior elemento: %d, posição: %d | Menor elemento: %d, posição: %d\n", maior, pma, menor, pme);
-  
+
 // LIBERAÇÃO DE MEMÓRIA E RETURN
   free(p);
   p = NULL;

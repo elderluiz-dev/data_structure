@@ -27,7 +27,7 @@ int main(){
   
   rem--;
   
-  if(rem > n){
+  if(rem > n || rem < n){
     printf("posição inválida, seu programa deu bug :(");
     return 2;
   }
